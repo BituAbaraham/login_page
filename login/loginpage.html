@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <span class="icon_close"><ion-icon name="close"></ion-icon></span>
+        <div class="form_box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required id="conformemail">
+                    <label> Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required id="conformpassword">
+                    <label> password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">Remaber Me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn" onclick="login()">Login</button>
+                <div class="login_registration">
+                    <p>Don't have an account?<a href="#" class="register_link">Register</a></p>
+                </div>
+            </form>
+        </div>
+ 
+        <div class="form_box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required id="Username">
+                    <label>Username</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required id="email">
+                    <label> Email</label>
+                </div>
+                <div class="input_box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required id="password">
+                    <label> password</label>
+                </div>
+                <div class="remember_forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label required>
+                </div>
+                <button type="submit" class="btn" onclick="Register()">Register</button>
+                <div class="login_registration">
+                    <p>Already have an account?<a href="#" class="login_link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+</body>
+</html>
